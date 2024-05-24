@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Stop Watch</title>
 </head>
+
 <body>
     <div class="stopwatch">
         <h1 id="displayTime">00:00:00</h1>
@@ -15,5 +17,10 @@
             <img src="images/reset.png">
         </div>
     </div>
+    <script>
+        let [seconds, minutes, hours] = [0, 0, 0];
+        let displayTime = document.getElementById("displayTime");
+    </script>
 </body>
+
 </html>
