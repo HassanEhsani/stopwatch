@@ -22,22 +22,23 @@
         let displayTime = document.getElementById("displayTime");
         let timer = null;
 
-        function stopwatch(){
+        function stopwatch() {
             seconds++;
-            if(seconds == 60){
+            if (seconds == 60) {
                 seconds = 0;
                 minutes++;
-                if(minutes == 60){
-                    minutes =0;
+                if (minutes == 60) {
+                    minutes = 0;
                     hours++;
                 }
             }
+            displayTime.innerHTML = hours + ":" + minutes + ":" + seconds;
         }
-        function watchStart(){
-            if(timer!== null){
+        function watchStart() {
+            if (timer !== null) {
                 clearInterval(timer);
             }
-            timer = setInterval(stopwatch(),1000);
+            timer = setInterval(stopwatch, 1000);
         }
     </script>
 </body>
